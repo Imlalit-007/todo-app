@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.App {
+  min-height: 100svh;
+  max-height: 100%;
+  background: url("./assets/bg-1.jpeg") center no-repeat;
+  background-size: cover;
+  font-family: "Kanit", sans-serif;
+}
