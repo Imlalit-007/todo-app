@@ -90,14 +90,14 @@ function TodoApp() {
       }}
     >
       <div className='sm:w-[640px] sm:p-5 basis-full min-w-[340px] flex flex-col border border-neutral-400 rounded sm:rounded-xl p-2.5 relative overflow-auto max-h-screen text-white backdrop-blur'>
-        <div className='absolute top-0 left-2/4 translate-x-[-50%] z-10 w-full rounded-t px-2.5 sm:px-5 py-6 sm:py-10 flex flex-col items-center gap-10 text-white'>
+        <div className='fixed top-0 left-2/4 translate-x-[-50%] z-10 w-full rounded-t px-2.5 sm:px-5 py-6 sm:py-10 flex flex-col items-center gap-10 text-white'>
           <h1 className='tracking-widest text-5xl font-[800] text-[#eee] w-full text-center sm:text-6xl'>
             TODO
           </h1>
           <TodoForm />
         </div>
 
-        <div className='flex flex-col items-center mt-44 sm:mt-52'>
+        <div className='flex flex-col items-center overflow-auto mt-44 sm:mt-52'>
           {allTodos && allTodos.length
             ? allTodos.map(todo => (
                 <TodoItem
